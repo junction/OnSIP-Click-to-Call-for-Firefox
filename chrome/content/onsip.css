@@ -1,0 +1,10 @@
+
+@import "chrome://onsip/skin/onsip.css";
+
+#osStatusText {
+    visibility: collapse;
+}
+
+#osStatusBar[errors] #osStatusText {
+    visibility: visible;
+}

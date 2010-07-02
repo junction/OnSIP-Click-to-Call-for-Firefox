@@ -1,0 +1,155 @@
+<!DOCTYPE html SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>OnSIP Firefox Add-on</title>
+    <style type="text/css">
+body {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 0px;
+  margin-bottom: 0%;
+  padding: 0% 0% 0% 0% ;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+pre {
+  font-family: monospace;
+}
+
+img { 
+  border: 0px;
+}
+
+dl, ul
+{
+  list-style-position: inside
+}
+
+#download
+{
+    background-image: url(/image/gradients/small.gif);
+    background-repeat: repeat-x;
+    border-color: #cccccc;
+    border-style: solid;
+    border-width: 1px;
+    float: left;
+    margin: 0 1em 1em 0;
+    padding: 1em;
+}
+
+#download a
+{
+    border-color: #333333;
+    color: #333333;
+}
+#download a:active, #download a:focus, #download a:hover
+{
+    border-color: #666666;
+    color: #666666;
+}
+
+#download li, #download p, #download ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+#download ul
+{
+    list-style: none;
+}
+
+    </style>
+  </head>
+
+  <body style="margin-left: 10%; margin-right: 10%;">
+    <table width="760" cellspacing="0">
+      <tr>
+        <td>
+          <a href="http://www.junctionnetworks.com">
+            <img src="/image/HeaderLeft.gif" alt="Junction Networks"/>
+          </a> 
+          <h1>OnSIP Click to Call - Firefox Add-on</h1>
+        </td>
+      </tr>
+    </table>
+
+    <p>This Firefox add-on locates telephone numbers in web pages and
+    converts them to Click to Call links on the fly.  When you click
+    on one of these links, a call is placed to your OnSIP SIP address
+    and when you answer the call is patched through to the telephone
+    number.</p>
+
+    <p>The add-on uses the <a href="../../api">Junction Networks Web
+    Services API</a> to implement in browser <b>Click to Call</b>.
+    The add-on utilizes
+    the <a href="../../api/action.CallSetup.html">CallSetup</a> API
+    Action with the <a href="../../api/response.rest.html">Rest
+    Response</a> format.</p>
+
+    <div id="download">
+      <h2><a href="onsip.xpi" iconURL="/image/firefox.png"
+             hash="sha1:0" onclick="return install(event);">Install
+             Add-on</a></h2>
+
+      <img src="/image/firefox.png" width="60" height="60"
+           alt="Firefox" title="Firefox" />
+
+      <p>Version 3.0 for Firefox 2.0 - 3.*</p>
+      <h3>Languages:</h3>
+      <ul>
+        <li>English</li>
+      </ul>
+    </div>
+       
+    <h2>Instructions</h2>
+    <hr/>
+    <dl>
+      <dt>
+        <b>Initial Setup</b>
+      </dt>
+      <dd>
+        <b><span style="color: red;">Important:</span></b>
+        Set your OnSIP SIP address:
+        <ul>
+          <li>
+            Firefox 2.0 and up: Go to <b>Tools =&gt; Add-ons =&gt; OnSIP =&gt;
+            Preferences</b>
+          </li>
+        </ul>
+        <p/>
+      </dd>
+      <dt>
+        <b>Enable/Disable</b>
+      </dt>
+      <dd>
+        You will see a small green ok icon,
+        <img src="/image/okIcon-sm.png" alt="ok icon"/>, in the bottom
+        right hand corner status bar indicating that the OnSIP add-on
+        is active and parsing web pages for telephone numbers. To
+        disable the add-on, click on the ok icon; it will change to a
+        disabled icon <img src="/image/disabledIcon-sm.png"
+        alt="disabled icon"/>.
+      </dd>
+    </dl>
+  </body>
+
+  <script type="application/javascript">
+    <!--
+    function install(event) {
+      params = {
+        "OnSIP Click to Call": {
+          URL:      event.target.href,
+          // IconURL:  event.target.getAttribute("iconURL"),
+          // Hash:     event.target.getAttribute("hash"),
+          toString: function () { return this.URL; }
+        }
+      };
+
+      InstallTrigger.install(params);
+      return false;
+    }
+    -->
+  </script>
+</html>

@@ -1,0 +1,4 @@
+<!-- Options -->
+<!ENTITY onsip.options.general.label "General">
+<!ENTITY onsip.options.general.from.address.caption "Call Setup From Address">
+<!ENTITY onsip.options.general.from.address.label "Specify your OnSIP user address:">

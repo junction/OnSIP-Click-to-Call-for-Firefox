@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://onsip/content/options/options.css" type="text/css"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://onsip/locale/options.dtd">
+
+<page onload="parent.onsip.initializeOptions()"
+      xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <groupbox>
+    <caption label="&onsip.options.general.from.address.caption;"/>
+    <label control="onsip.call.setup.from.address"
+           value="&onsip.options.general.from.address.label;"/>
+    <textbox id="onsip.call.setup.from.address"/>
+  </groupbox>
+</page>

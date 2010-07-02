@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://onsip/content/options/options.css"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://onsip/locale/options.dtd">
+
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        id="onsip-options-dialog"
+        title="OnSIP Options"
+        buttons="accept, cancel"
+        ondialogaccept="onsip.saveOptions()">
+  <script src="chrome://onsip/content/onsip.js"/>
+  <script src="chrome://onsip/content/preferences.js"/>
+  <script src="chrome://onsip/content/options/options.js"/>
+
+  <hbox flex="1">
+    <listbox id="onsip-page-list" onselect="onsip.changePage(this)">
+      <listitem label="&onsip.options.general.label;" selected="true"
+                value="chrome://onsip/content/options/pages/general.xul"/>
+    </listbox>
+    <vbox flex="1">
+      <iframe flex="1" id="onsip-options-iframe"
+              src="chrome://onsip/content/options/pages/general.xul"/>
+    </vbox>
+  </hbox>
+</dialog>

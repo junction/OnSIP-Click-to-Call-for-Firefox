@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://onsip/content/onsip.css"?>
+
+<overlay id="onsip-status" 
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script src="chrome://onsip/content/onsip.js"/>
+  <script src="chrome://onsip/content/app.js"/>
+  <script src="chrome://onsip/content/preferences.js"/>
+  <script src="chrome://onsip/content/Fat.js"/>
+  <script src="chrome://onsip/content/HttpRequest.js"/>
+  <script src="chrome://onsip/content/JnDocument.js"/>
+  <script type="application/javascript">
+    window.addEventListener("load", onsip.load, false);
+    window.addEventListener("unload", onsip.unload, false);
+  </script>
+
+  <statusbar id="status-bar">
+    <statusbarpanel id="onsip-panel"
+                    onclick="onsip.theApp.toggleDisabled()">
+      <image id="status-icon"/>
+      <label id="status-text" value=""/>
+    </statusbarpanel>
+  </statusbar>
+</overlay>

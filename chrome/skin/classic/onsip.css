@@ -1,0 +1,21 @@
+#status-icon {
+  list-style-image: url(chrome://onsip/skin/enabled.png);
+}
+
+#status-text {
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+}
+
+#onsip-panel {
+  cursor: pointer;
+}
+
+#onsip-panel[errors] #status-icon {
+  list-style-image: url(chrome://onsip/skin/errorIcon-sm.png);
+}
+
+#onsip-panel[disabled="true"] #status-icon {
+  list-style-image: url(chrome://onsip/skin/disabled.png);
+}

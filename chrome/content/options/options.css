@@ -1,0 +1,8 @@
+@import url("chrome://global/skin/");
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#onsip-options-dialog
+{
+    height: 40em !important;
+    width: 55em !important;
+}
